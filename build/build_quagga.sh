@@ -164,6 +164,7 @@ build_zrpc(){
   # these two lines can be removed.
   git checkout 9bd1ee8e
   patch -p1 < ${PATCHES_DIR}/fix_zrpcd_make_dist.patch
+  patch -p1 < ${PATCHES_DIR}/zrpcd_hardcoded_paths.patch
   autoreconf -i
 
   # ZRPC RPM
